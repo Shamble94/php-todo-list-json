@@ -12,6 +12,7 @@ createApp({
         this.getTodoList();
     },
     methods:{
+        /* Funzione per aggiungere una task */
         addTask(){
             const data = {
                 addtask: this.todoItem
@@ -24,6 +25,7 @@ createApp({
                 
             })
         },
+        /* Funzione che va a riprendere la lista delle task dal server */
         getTodoList(){
             axios.get(this.apiUrl).then((response) => {
                 console.log(response.data)
