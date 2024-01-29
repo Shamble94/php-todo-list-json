@@ -17,7 +17,11 @@
                 </div>
                 <div class="col-12">
                     <h4>Mansioni da svolgere:</h4>
-                    <li class="list-unstyled" v-for="todo, index in todoList" :key="index"> {{ todo.todo }}</li>
+                    <li class="list-unstyled my-2" v-for="tasks, index in todoList" :key="index"> {{ tasks.todo }}</li>
+                </div>
+                <div class="col-12">
+                    <input type="text" v-model="todoItem" @keyup.inter="addTask" class="form-control" placeholder="Inserisci nuova task">
+                    <button class="btn btn-primary" @click="addTask" type="button" > Aggiungi </button>
                 </div>
             </div>
         </div>
