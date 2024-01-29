@@ -9,6 +9,19 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>La mia To-do List!</h1>
+                </div>
+                <div class="col-12">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
     <script type="text/javascript" src=".js/script.js"></script>
 </body>
 </html>
